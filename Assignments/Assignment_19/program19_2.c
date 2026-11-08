@@ -1,0 +1,47 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                                                                                                 //
+// Funtion Name:pattern                                                                                                                                            //
+// Descrition:program which accept number of row and columns from user and display below pattern:-                                                                 //
+//    /*                                                                                                                                                           //
+//       input:-irow=4 icol=4                                                                                                                                      //
+//       output:-  *  *  *  *                                                                                                                                            //
+//                 *  *  *                                                                                                                                        //
+//                 *  *                                                                                                                                           //
+//                 *                                                                                                                                        //
+//                                                                                                                                                                 //
+//                                                                                                                                                                 //
+//    */                                                                                                                                                           //
+// Input:integer,integer                                                                                                                                           //
+// Output:integer                                                                                                                                                  //
+// Author:Pranav shankar ligade                                                                                                                                    //
+// Date:08/11/2026                                                                                                                                                 //
+//                                                                                                                                                                 //
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+#include<stdlib.h>
+
+void pattern(int irow,int icol)
+{
+    int icnti=0,icntj=0;
+
+    for(icnti=irow;icnti>=1;icnti--) //start icnt=irow ->start with 4;icnt>=1 ->continue until 1.
+    {
+        for(icntj=1;icntj<=icnti;icntj++)
+        {
+            printf("* \t");
+        }
+        printf("\n\n");
+       
+    }
+}
+int main()
+{
+    int ivalue1=0,ivalue2=0;
+
+    printf("enter rows and columns\n");
+    scanf("%d %d",&ivalue1,&ivalue2);
+
+    pattern(ivalue1,ivalue2);
+
+    return EXIT_SUCCESS;
+}
